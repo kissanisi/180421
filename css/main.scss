@@ -1,0 +1,25 @@
+@import "settings/fonts";
+
+//variables
+$container-width: 940px;
+$footer-height: 72px;
+$body-font: "fira_sansregular", Helvetica, serif;
+
+//colors
+$green: #8cc34b;
+$black: #212121;
+$grey: #727272;
+$blue: #03a9f4;
+
+@import "settings/adjustment";
+@import "settings/normalize";
+@import "settings/mixins";
+@import "settings/font-awesome";
+@import "settings/fonts";
+
+
+//styles
+@import "sections/header";
+@import "sections/footer";
+@import "about";
+@import "list"

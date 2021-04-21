@@ -1,0 +1,68 @@
+header{
+    background-color: $green;
+    @include box-shadow(0 5px 5px rgba(0,0,0, 0.2));
+}
+
+.header__left, .header__right{
+    width: 50%;
+}
+//
+.header{
+    padding: 10px 0;
+}
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.socials__list{
+    display: flex;
+}
+.header__flex {
+    display: flex;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.header__icon {
+    width: 60px;
+    height: 60px;
+    @include border-radius(50%);
+    overflow: hidden;
+    border: 1px solid white;
+}
+.user__info {
+    margin-left: 20px;
+    color: #fff;
+}
+.user__name {
+    font-size: 21px;
+    @include fira(medium); 
+    color: #fff;
+}
+.user__email-address {
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    opacity: .7;
+}
+.socials__item {
+    margin-left: 20px;
+    &:first-child {
+        margin-left: 0;
+    }   
+}
+.socials__link {
+    &:hover {
+        .socials__icon{
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+.socials__icon {
+    font-size: 35px;
+    color: #fff;
+    opacity: .7;
+}

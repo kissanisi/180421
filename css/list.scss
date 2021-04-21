@@ -1,0 +1,100 @@
+.container{
+    width: $container-width;
+    margin: auto;
+}
+.list_item_foto{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.list_item_foto:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color:#8cc34b;
+//    opacity: 0;
+    position: absolute;
+    bottom: -20px;
+    transition: 1s;
+}
+.list_item:hover .list_item_foto:after{
+    bottom: 0px;
+    
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list_item{
+    width: calc(100%/3 - 20px);
+    margin-bottom: 10px;
+}
+.list_item_button_input{
+    position: absolute;
+    left: -99999px;
+}
+input[type="checkbox"] + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+}
+input[type="checkbox"] + label:before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid grey;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+input[type="checkbox"] + label:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    top: 6px;
+    left: 5px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    transform:rotate(-45deg);
+    display: block;
+}
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+    
+}
+.technology{
+    font-size: 42px;
+    text-align: center;
+}
+.help{
+    color: $grey;
+    text-align: center;
+}
+.list_item:nth-child(1) .list_item_foto{
+    background-image: url(../img/js.jpg);
+}
+.list_item:nth-child(2) .list_item_foto{
+    background-image: url(../img/jq.jpg);
+}
+.list_item:nth-child(3) .list_item_foto{
+    background-image: url(../img/black_bg.jpg);
+}
+.list_item:nth-child(4) .list_item_foto{
+    background-image: url(../img/work.jpg);
+}
+.list_item:nth-child(5) .list_item_foto{
+    background-image: url(../img/btn.jpg);
+}
+.list_item:nth-child(6) .list_item_foto{
+    background-image: url(../img/cssgalry.jpg);
+}

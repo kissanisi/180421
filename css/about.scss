@@ -1,0 +1,54 @@
+.about_title{
+    @include fira(medium);
+        font-size: 42px;
+        text-align: center;
+        color: $black;
+
+}
+.about_desk{
+    font-size: 21px;
+    @include fira(light);
+    color: $grey;
+    text-align: center;
+    margin-bottom: 45px;
+    
+}
+.experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience_left, .experience_right{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience_img{
+    width: 30%;
+}
+.experience_info{
+    width: 65%;
+}
+.exp_icon{
+    max-width: 100%;
+}
+.about_smth{
+    font-size: 21px;
+    color: $black;
+    @include fira(regular);
+    margin-bottom: 18px;
+    
+}
+.about_info{
+    @include fira(light);
+    font-size: 14px;
+    color: $grey;
+    a{
+        color: $blue;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+}
