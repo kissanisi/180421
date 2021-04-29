@@ -3485,3 +3485,21 @@ input[type=checkbox]:not(:checked) + label:after {
 }
 
 /*# sourceMappingURL=main.css.map */
+@media (max-width:1080px)
+{
+    .list_item{
+        width: calc(100%/3 - 20px)
+    }
+}
+@media (max-width:820px)
+{
+    .list_item{
+        width: calc(100%/2 - 20px)
+    }
+}
+@media (max-width:500px)
+{
+    .list_item{
+        width: calc(100%/1 - 20px)
+    }
+}
